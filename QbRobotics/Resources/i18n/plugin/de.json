@@ -1,0 +1,12 @@
+{
+  "testKey": "Dies ist die Steuerungsoberfläche des Plugins",
+  "isAutoIdentifyTip": "Automatische Erkennung läuft, Bedienung nicht möglich",
+  "isEnabledTip": "Gerät nicht aktiviert, Bedienung nicht möglich",
+  "alarmTip": "Gerätealarm aktiv, Bedienung nicht möglich",
+  "prjRunningTip": "Projekt läuft, Bedienung nicht möglich",
+  "dragPlaybackTip": "Drag-Wiedergabe läuft, Bedienung nicht möglich",
+  "dragTrackTip": "Drag-Bahn läuft, Bedienung nicht möglich",
+  "dragModeTip": "Drag-Modus aktiv, Bedienung nicht möglich",
+  "dragTeachTip": "Drag-Teaching läuft, Bedienung nicht möglich",
+  "remoteControlTip": "Im TCP-Modus, Bedienung nicht möglich"
+}

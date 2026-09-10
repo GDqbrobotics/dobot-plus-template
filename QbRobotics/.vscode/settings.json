@@ -1,0 +1,52 @@
+{ 
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "configs/Blocks.json"
+      ],
+      "url": ".vscode/Blocks.schema.json"
+    },
+    {
+      "fileMatch": [
+        "configs/Toolbar.json"
+      ],
+      "url": ".vscode/Toolbar.schema.json"
+    },
+    {
+      "fileMatch": [
+        "configs/Main.json"
+      ],
+      "url": ".vscode/Main.schema.json"
+    },
+    {
+      "fileMatch": [
+        "configs/Scripts.json"
+      ],
+      "url": ".vscode/Script.schema.json"
+    },
+    {
+      "fileMatch": [
+        "api.json"
+      ],
+      "url": ".vscode/Api.schema.json"
+    }
+  ],
+  "i18n-ally.localesPaths": ["Resources/i18n/client", "Resources/i18n/plugin"],
+  "i18n-ally.sourceLanguage": "zh",
+  "i18n-ally.enabledFrameworks": ["react-i18next", "react"],
+  "i18n-ally.keystyle": "flat",
+  "cSpell.words": [
+    "DOBOTPLUS",
+    "dobot"
+  ],
+  "[lua]": {
+    "editor.defaultFormatter": "yinfei.luahelper",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "on",
+      "strings": "on"
+    }
+  },
+  "luahelper.Warn.AllEnable": true
+}

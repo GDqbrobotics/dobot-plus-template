@@ -1,0 +1,168 @@
+{
+  "protocol": {
+    "protocol": "io",
+    "baudRate": 115200,
+    "parity": "E",
+    "stopBits": 1
+  },
+  "functionList": [
+    {
+      "keyWord": "pingDevice",
+      "funName": "PingDevice",
+      "funDesc": "Discover the device and obtain its serial number and family identification.",
+      "params": [],
+      "blockly": {
+        "message": "Ping device"
+      },
+      "returnData": {
+        "returnType": "string",
+        "returnDesc": "The detected device family and identity information."
+      },
+      "ui": "button"
+    },
+    {
+      "keyWord": "",
+      "funName": "SetControlMode",
+      "funDesc": "Select the active control mode for the gripper controller.",
+      "params": [
+        {
+          "paramName": "controlMode",
+          "paramType": "string",
+          "default": "Position",
+          "paramDesc": "Device control mode for the selected gripper.",
+          "blockly": {
+            "param_type": "field_dropdown",
+            "data_type": "text",
+            "name": "controlMode",
+            "options": [
+              { "label": "Position", "value": "Position" },
+              { "label": "Current", "value": "Current" }
+            ]
+          }
+        }
+      ],
+      "blockly": {
+        "message": "Set control mode to %1"
+      },
+      "returnData": {
+        "returnType": "boolean",
+        "returnDesc": "True when the mode change is acknowledged successfully."
+      },
+      "ui": "dropdown"
+    },
+    {
+      "keyWord": "",
+      "funName": "SetMotorEnabled",
+      "funDesc": "Enable or disable the gripper motor drive.",
+      "params": [
+        {
+          "paramName": "enabled",
+          "paramType": "boolean",
+          "default": false,
+          "paramDesc": "Whether the drive should be enabled.",
+          "blockly": {
+            "param_type": "field_dropdown",
+            "data_type": "boolean",
+            "name": "enabled",
+            "options": [
+              { "label": "Enabled", "value": "true" },
+              { "label": "Disabled", "value": "false" }
+            ]
+          }
+        }
+      ],
+      "blockly": {
+        "message": "Set motor enabled to %1"
+      },
+      "returnData": {
+        "returnType": "boolean",
+        "returnDesc": "True when the command is acknowledged successfully."
+      },
+      "ui": "switch"
+    },
+    {
+      "keyWord": "",
+      "funName": "SetTarget",
+      "funDesc": "Send the target position or closure reference for the selected device family.",
+      "params": [
+        {
+          "paramName": "target",
+          "paramType": "number",
+          "default": 0,
+          "paramDesc": "Target gripper position or closure value.",
+          "blockly": {
+            "param_type": "input_value",
+            "data_type": "math_number",
+            "name": "target"
+          }
+        },
+        {
+          "paramName": "deviceType",
+          "paramType": "string",
+          "default": "SHR",
+          "paramDesc": "Device family to use for the correct conversion rules.",
+          "blockly": {
+            "param_type": "field_dropdown",
+            "data_type": "text",
+            "name": "deviceType",
+            "options": [
+              { "label": "SHR", "value": "SHR" },
+              { "label": "CLAW", "value": "CLAW" },
+              { "label": "SHIN", "value": "SHIN" }
+            ]
+          }
+        }
+      ],
+      "blockly": {
+        "message": "Set target to %1 for %2"
+      },
+      "returnData": {
+        "returnType": "boolean",
+        "returnDesc": "True when the target update is acknowledged successfully."
+      },
+      "ui": "slider"
+    },
+    {
+      "keyWord": "position",
+      "funName": "GetPosition",
+      "funDesc": "Read the current measured gripper position.",
+      "params": [],
+      "blockly": {
+        "message": "Get position"
+      },
+      "returnData": {
+        "returnType": "number",
+        "returnDesc": "The current gripper position in device-specific units."
+      },
+      "ui": "tag"
+    },
+    {
+      "keyWord": "current",
+      "funName": "GetCurrent",
+      "funDesc": "Read the current load or motor draw.",
+      "params": [],
+      "blockly": {
+        "message": "Get current"
+      },
+      "returnData": {
+        "returnType": "number",
+        "returnDesc": "The measured current draw in device-specific units."
+      },
+      "ui": "tag"
+    },
+    {
+      "keyWord": "serialNumber",
+      "funName": "GetSerialNumber",
+      "funDesc": "Read the device serial number or identity string.",
+      "params": [],
+      "blockly": {
+        "message": "Get serial number"
+      },
+      "returnData": {
+        "returnType": "string",
+        "returnDesc": "The exposed serial number or identity string."
+      },
+      "ui": "tag"
+    }
+  ]
+}

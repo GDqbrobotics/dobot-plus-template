@@ -1,0 +1,12 @@
+{
+  "testKey": "플러그인 제어 화면입니다",
+  "isAutoIdentifyTip": "자동 인식 중, 조작할 수 없습니다",
+  "isEnabledTip": "장비가 활성화되지 않아 조작할 수 없습니다",
+  "alarmTip": "장비 알람 중, 조작할 수 없습니다",
+  "prjRunningTip": "프로젝트가 실행 중, 조작할 수 없습니다",
+  "dragPlaybackTip": "드래그 재생 중, 조작할 수 없습니다",
+  "dragTrackTip": "드래그 궤적 중, 조작할 수 없습니다",
+  "dragModeTip": "드래그 모드 중, 조작할 수 없습니다",
+  "dragTeachTip": "드래그 티칭 중, 조작할 수 없습니다",
+  "remoteControlTip": "TCP 모드에서는 조작할 수 없습니다"
+}

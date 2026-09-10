@@ -1,0 +1,29 @@
+{
+  "blocks": {
+    "PingDevice": "Ping device",
+    "SetControlMode": "Set control mode to %1",
+    "SetMotorEnabled": "Set motor enabled to %1",
+    "SetTarget": "Set target to %1 for %2",
+    "GetPosition": "Get position",
+    "GetCurrent": "Get current",
+    "GetSerialNumber": "Get serial number",
+    "blocksDemoKey": "Block translation content in English %1"
+  },
+  "config": {
+    "configDemoKey": "Content in English",
+    "controlMode": "Control mode",
+    "target": "Target",
+    "deviceType": "Device type",
+    "enabled": "Enabled"
+  },
+  "scripts": {
+    "scriptDemoKey": "Script translation content in English",
+    "PingDevice": "Ping the gripper device",
+    "SetControlMode": "Set the gripper control mode",
+    "SetMotorEnabled": "Enable or disable the gripper motor",
+    "SetTarget": "Set the target value for the gripper",
+    "GetPosition": "Read the current position",
+    "GetCurrent": "Read the current draw",
+    "GetSerialNumber": "Read the serial number"
+  }
+}

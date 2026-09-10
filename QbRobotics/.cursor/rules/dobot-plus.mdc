@@ -1,0 +1,35 @@
+---
+description: Dobot+ plugin Agent workflow - use /dobot-plus skill, prefer scripts over freestyle coding
+alwaysApply: true
+---
+
+# Dobot+ Plugin Agent Rules
+
+## Source of truth
+
+- Device behavior comes from root `Requirements.md` only. Do **not** invent registers, protocols, or APIs.
+- Code generation must follow the **`dobot-plus`** skill (`/dobot-plus`). Do not hand-write scaffold that the skill scripts already produce.
+
+## Speed: minimize context
+
+Do **not** load or search: `node_modules/`, `Resources/`, `.vscode/`, `output/`, `.dobot/protocol/`, `.dobot/store/`, `.dobot/template/`.
+
+When editing UI/Lua, prefer: `Requirements.md` -> `function.json` -> `ui/Main.tsx` -> `lua/*.lua` -> `.dobot/http/http.ts`.
+
+## Accuracy: edit boundaries
+
+| Edit freely | Usually script-generated | Do not modify |
+|---|---|---|
+| `Requirements.md`, `ui/Main.tsx`, `lua/{name}.lua` function bodies | `function.json`, `configs/*`, `lua/httpAPI.lua`, `lua/userAPI.lua`, `lua/daemon.lua`, Modbus helpers | Skill `references/*`, unrelated monorepo packages |
+
+## UI / HTTP conventions (from skill)
+
+- Root with `DobotPlusApp`; layout with antd `Card` / `Row` / `Col`; left status, right controls.
+- Import: `import { http } from '@dobot/index'` then `http.methodName()`.
+- Response data: `res.data[0].data`. Use antd only (not `@dobot-plus/components` for new UI).
+
+## Workflow
+
+1. Ensure `Requirements.md` has protocol params, register map, bit fields, and atomic functions.
+2. Run `/dobot-plus` and follow skill steps (scripts first, then fill Lua + Main.tsx).
+3. Finish with `npx dpt build` (Node 20+).

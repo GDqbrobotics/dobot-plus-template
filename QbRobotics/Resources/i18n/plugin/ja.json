@@ -1,0 +1,12 @@
+{
+  "testKey": "これはプラグインの制御画面です",
+  "isAutoIdentifyTip": "自動認識中のため、操作できません",
+  "isEnabledTip": "デバイスが有効化されていないため、操作できません",
+  "alarmTip": "デバイス警報中のため、操作できません",
+  "prjRunningTip": "プロジェクト実行中のため、操作できません",
+  "dragPlaybackTip": "ドラッグ再生中のため、操作できません",
+  "dragTrackTip": "ドラッグ軌跡中のため、操作できません",
+  "dragModeTip": "ドラッグモード中のため、操作できません",
+  "dragTeachTip": "ドラッグティーチング中のため、操作できません",
+  "remoteControlTip": "TCPモードのため、操作できません"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "script_name": "PingDevice",
+    "message": "Discover the device and obtain its serial number and family identification.",
+    "script_code": "PingDevice()"
+  },
+  {
+    "script_name": "SetControlMode",
+    "message": "Select the active control mode for the gripper controller.",
+    "script_code": "SetControlMode(Position)"
+  },
+  {
+    "script_name": "SetMotorEnabled",
+    "message": "Enable or disable the gripper motor drive.",
+    "script_code": "SetMotorEnabled(false)"
+  },
+  {
+    "script_name": "SetTarget",
+    "message": "Send the target position or closure reference for the selected device family.",
+    "script_code": "SetTarget(0, SHR)"
+  },
+  {
+    "script_name": "GetPosition",
+    "message": "Read the current measured gripper position.",
+    "script_code": "GetPosition()"
+  },
+  {
+    "script_name": "GetCurrent",
+    "message": "Read the current load or motor draw.",
+    "script_code": "GetCurrent()"
+  },
+  {
+    "script_name": "GetSerialNumber",
+    "message": "Read the device serial number or identity string.",
+    "script_code": "GetSerialNumber()"
+  }
+]

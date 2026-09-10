@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the toolbar, typically used for localization."
+    },
+    "width": {
+      "type": "number",
+      "description": "The width of the toolbar in pixels."
+    },
+    "height": {
+      "type": "number",
+      "description": "The height of the toolbar in pixels."
+    }
+  },
+  "required": ["name", "width", "height"],
+  "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+{
+  "testKey": "Toto je ovládací rozhraní pluginu",
+  "isAutoIdentifyTip": "Probíhá automatická identifikace, operace není dostupná",
+  "isEnabledTip": "Zařízení není aktivováno, operace není dostupná",
+  "alarmTip": "Poplach zařízení, operace není dostupná",
+  "prjRunningTip": "Projekt běží, operace není dostupná",
+  "dragPlaybackTip": "Probíhá přehrávání tažením, operace není dostupná",
+  "dragTrackTip": "Probíhá trajektorie tažením, operace není dostupná",
+  "dragModeTip": "Režim tažení aktivní, operace není dostupná",
+  "dragTeachTip": "Probíhá výuka tažením, operace není dostupná",
+  "remoteControlTip": "V režimu TCP operace není dostupná"
+}

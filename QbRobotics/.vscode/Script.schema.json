@@ -1,0 +1,22 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "script_name": {
+        "type": "string",
+        "description": "The name of the script."
+      },
+      "message": {
+        "type": "string",
+        "description": "The message associated with the script, typically used for localization."
+      },
+      "script_code": {
+        "type": "string",
+        "description": "The code of the script."
+      }
+    },
+    "required": ["script_name", "message", "script_code"],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "testKey": "這是插件的控制介面",
+  "isAutoIdentifyTip": "自動識別中，無法操作",
+  "isEnabledTip": "設備未使能，無法操作",
+  "alarmTip": "設備報警中，無法操作",
+  "prjRunningTip": "項目正在運行，無法操作",
+  "dragPlaybackTip": "正在拖動回放，無法操作",
+  "dragTrackTip": "正在拖動軌跡，無法操作",
+  "dragModeTip": "正在拖動模式，無法操作",
+  "dragTeachTip": "正在拖動示教，無法操作",
+  "remoteControlTip": "TCP模式下，無法操作"
+}

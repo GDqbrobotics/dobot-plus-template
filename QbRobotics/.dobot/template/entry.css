@@ -1,0 +1,26 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    padding: 12px 24px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 320px;
+    height: 180px;
+}
+
+iframe {
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.1667); /* 根据比例缩放，320/1920 = 0.1667 */
+    transform-origin: top left; /* 保持左上角为缩放原点 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #F5F5F5;
+}

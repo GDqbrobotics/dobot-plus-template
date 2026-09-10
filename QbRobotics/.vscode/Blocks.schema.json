@@ -1,0 +1,94 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "block_name": {
+        "type": "string"
+      },
+      "block_color": {
+        "type": "string",
+        "format": "color"
+      },
+      "block_type": {
+        "type": "string",
+        "enum": ["shape_hat", "shape_end", "shape_statement", "output_string", "output_boolean", "output_number"]
+      },
+      "block_popup": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "page": {
+            "type": "string"
+          },
+          "width": {
+            "type": "number"
+          },
+          "height": {
+            "type": "number"
+          }
+        },
+        "required": ["title", "page"]
+      },
+      "block_configs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string"
+            },
+            "params": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "param_type": {
+                    "type": "string",
+                    "enum": ["input_value", "field_dropdown", "input_statement"]
+                  },
+                  "data_type": {
+                    "type": "string",
+                    "enum": ["math_number", "text", ""]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "default": {
+                    "type": ["string", "number", "boolean"]
+                  },
+                  "options": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": ["label", "value"]
+                    }
+                  }
+                },
+                "required": ["param_type", "name"]
+              }
+            }
+          },
+          "required": ["message"]
+        }
+      },
+      "block_code": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": ["block_name", "block_type", "block_configs"]
+  }
+}

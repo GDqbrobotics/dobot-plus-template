@@ -1,0 +1,12 @@
+{
+  "testKey": "Esta es la interfaz de control del plugin",
+  "isAutoIdentifyTip": "Identificación automática en curso, operación no disponible",
+  "isEnabledTip": "Dispositivo no habilitado, operación no disponible",
+  "alarmTip": "Alarma del dispositivo activa, operación no disponible",
+  "prjRunningTip": "Proyecto en ejecución, operación no disponible",
+  "dragPlaybackTip": "Reproducción por arrastre en curso, operación no disponible",
+  "dragTrackTip": "Trayectoria por arrastre en curso, operación no disponible",
+  "dragModeTip": "Modo de arrastre activo, operación no disponible",
+  "dragTeachTip": "Enseñanza por arrastre en curso, operación no disponible",
+  "remoteControlTip": "En modo TCP, operación no disponible"
+}

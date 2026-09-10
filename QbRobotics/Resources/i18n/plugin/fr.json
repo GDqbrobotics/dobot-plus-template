@@ -1,0 +1,12 @@
+{
+  "testKey": "C'est l'interface de contrôle du plugin",
+  "isAutoIdentifyTip": "Identification automatique en cours, opération impossible",
+  "isEnabledTip": "Appareil non activé, opération impossible",
+  "alarmTip": "Alarme appareil active, opération impossible",
+  "prjRunningTip": "Projet en cours d'exécution, opération impossible",
+  "dragPlaybackTip": "Lecture par glissement en cours, opération impossible",
+  "dragTrackTip": "Trajectoire par glissement en cours, opération impossible",
+  "dragModeTip": "Mode glissement actif, opération impossible",
+  "dragTeachTip": "Apprentissage par glissement en cours, opération impossible",
+  "remoteControlTip": "En mode TCP, opération impossible"
+}

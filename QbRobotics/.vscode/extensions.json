@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "sumneko.lua",
+    "yinfei.luahelper",
+    "streetsidesoftware.code-spell-checker",
+    "lokalise.i18n-ally"
+  ]
+}

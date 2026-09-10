@@ -1,0 +1,11 @@
+{
+  "blocks": {
+    "blocksDemoKey": "Bausteinübersetzung auf Deutsch %1"
+  },
+  "config": {
+    "configDemoKey": "Konfigurationsinhalt auf Deutsch"
+  },
+  "scripts": {
+    "scriptDemoKey": "Skriptübersetzung auf Deutsch"
+  }
+}

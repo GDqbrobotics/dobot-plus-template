@@ -1,0 +1,11 @@
+{
+  "blocks": {
+    "blocksDemoKey": "Contenu du bloc en français %1"
+  },
+  "config": {
+    "configDemoKey": "Contenu en français"
+  },
+  "scripts": {
+    "scriptDemoKey": "Contenu du script en français"
+  }
+}

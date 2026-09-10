@@ -1,0 +1,11 @@
+{
+  "blocks": {
+    "blocksDemoKey": "Conteúdo do bloco %1"
+  },
+  "config": {
+    "configDemoKey": "Conteúdo"
+  },
+  "scripts": {
+    "scriptDemoKey": "Conteúdo do script"
+  }
+}

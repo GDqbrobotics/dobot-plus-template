@@ -1,0 +1,8 @@
+{
+  "workspace.library": ["./node_modules/@dobot-plus/lua"],
+  "workspace.ignoreDir": [".vscode", "node_modules", "configs", "Resources", "ui", "dist"],
+  "runtime.version": "Lua 5.4",
+  "diagnostics": {
+    "enable": true
+  }
+}

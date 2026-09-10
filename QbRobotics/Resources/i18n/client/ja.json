@@ -1,0 +1,11 @@
+{
+  "blocks": {
+    "blocksDemoKey": "ブロックの日本語翻訳内容 %1"
+  },
+  "config": {
+    "configDemoKey": "日本語の内容"
+  },
+  "scripts": {
+    "scriptDemoKey": "スクリプトの日本語翻訳内容"
+  }
+}

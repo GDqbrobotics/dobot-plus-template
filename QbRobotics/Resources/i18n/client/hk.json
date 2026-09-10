@@ -1,0 +1,11 @@
+{
+  "blocks": {
+    "blocksDemoKey": "積木中文翻譯內容 %1"
+  },
+  "config": {
+    "configDemoKey": "中文內容"
+  },
+  "scripts": {
+    "scriptDemoKey": "腳本中文翻譯內容"
+  }
+}

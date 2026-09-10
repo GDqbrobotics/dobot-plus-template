@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.next/
+out/
+output/
+
+# Large / low-value for Agent (aligned with dobot-plus skill)
+.vscode/
+
+# Framework noise (keep editable app code: ui/, lua/, configs/)
+# Agent should not browse these unless debugging scaffold
+.dobot/protocol/
+.dobot/store/
+.dobot/template/
+.dobot/components/
+.dobot/utils/
+
+# Caches
+.cache/
+.turbo/
+.nx/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage/
+
+# Environment & local
+*.local
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

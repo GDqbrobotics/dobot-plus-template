@@ -1,0 +1,158 @@
+[
+  {
+    "block_name": "PingDevice",
+    "block_color": "#ffa211",
+    "block_type": "output_string",
+    "block_configs": [
+      {
+        "message": "Ping device",
+        "params": []
+      }
+    ],
+    "block_code": [
+      "PingDevice()"
+    ]
+  },
+  {
+    "block_name": "SetControlMode",
+    "block_color": "#ffa211",
+    "block_type": "output_boolean",
+    "block_configs": [
+      {
+        "message": "Set control mode to %1",
+        "params": [
+          {
+            "name": "controlMode",
+            "default": "Position",
+            "param_type": "field_dropdown",
+            "options": [
+              {
+                "label": "Position",
+                "value": "Position"
+              },
+              {
+                "label": "Current",
+                "value": "Current"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "block_code": [
+      "SetControlMode({controlMode})"
+    ]
+  },
+  {
+    "block_name": "SetMotorEnabled",
+    "block_color": "#ffa211",
+    "block_type": "output_boolean",
+    "block_configs": [
+      {
+        "message": "Set motor enabled to %1",
+        "params": [
+          {
+            "name": "enabled",
+            "default": false,
+            "param_type": "field_dropdown",
+            "options": [
+              {
+                "label": "Enabled",
+                "value": "true"
+              },
+              {
+                "label": "Disabled",
+                "value": "false"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "block_code": [
+      "SetMotorEnabled({enabled})"
+    ]
+  },
+  {
+    "block_name": "SetTarget",
+    "block_color": "#ffa211",
+    "block_type": "output_boolean",
+    "block_configs": [
+      {
+        "message": "Set target to %1 for %2",
+        "params": [
+          {
+            "name": "target",
+            "default": 0,
+            "param_type": "input_value",
+            "options": []
+          },
+          {
+            "name": "deviceType",
+            "default": "SHR",
+            "param_type": "field_dropdown",
+            "options": [
+              {
+                "label": "SHR",
+                "value": "SHR"
+              },
+              {
+                "label": "CLAW",
+                "value": "CLAW"
+              },
+              {
+                "label": "SHIN",
+                "value": "SHIN"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "block_code": [
+      "SetTarget({target}, {deviceType})"
+    ]
+  },
+  {
+    "block_name": "GetPosition",
+    "block_color": "#ffa211",
+    "block_type": "output_number",
+    "block_configs": [
+      {
+        "message": "Get position",
+        "params": []
+      }
+    ],
+    "block_code": [
+      "GetPosition()"
+    ]
+  },
+  {
+    "block_name": "GetCurrent",
+    "block_color": "#ffa211",
+    "block_type": "output_number",
+    "block_configs": [
+      {
+        "message": "Get current",
+        "params": []
+      }
+    ],
+    "block_code": [
+      "GetCurrent()"
+    ]
+  },
+  {
+    "block_name": "GetSerialNumber",
+    "block_color": "#ffa211",
+    "block_type": "output_string",
+    "block_configs": [
+      {
+        "message": "Get serial number",
+        "params": []
+      }
+    ],
+    "block_code": [
+      "GetSerialNumber()"
+    ]
+  }
+]
